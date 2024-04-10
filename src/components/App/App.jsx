@@ -22,7 +22,7 @@ export default function App() {
   };
 
   const visibleTasks = tasks.filter((task) =>
-    task.text.toLowerCase().includes(filter.toLocaleLowerCase())
+    task.text.toLowerCase().includes(filter.toLowerCase())
   );
 
   return (
